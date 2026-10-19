@@ -1,0 +1,26 @@
+[
+   {
+      "id": "A101",
+      "title": "Latest Celebrity News",
+      "category": "Celebrity",
+      "format": "News",
+      "value": 10,
+      "details": "Entertainment news and celebrity updates"
+   },
+   {
+      "id": "A102",
+      "title": "New Music Releases",
+      "category": "Music",
+      "format": "Review",
+      "value": 8,
+      "details": "New albums and singles"
+   },
+   {
+      "id": "A103",
+      "title": "Upcoming Movies and Shows",
+      "category": "Movies & TV",
+      "format": "News",
+      "value": 9,
+      "details": "Entertainment releases and reviews"
+   }
+]

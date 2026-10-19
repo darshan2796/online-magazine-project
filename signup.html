@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>POP RAZZ - Subscribe</title>
+
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+   <!-- Group CSS -->
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+   <!-- Header -->
+   <header class="text-center">
+      <h1 class="display-1 fw-bold">POP RAZZ</h1>
+   </header>
+
+   <!-- Navigation Menu -->
+   <nav class="bg-dark text-center p-3">
+      <a class="text-white m-3" href="index.html">HOME</a>
+      <a class="text-white m-3" href="index.html#celebrity">CELEBRITY</a>
+      <a class="text-white m-3" href="index.html#music">MUSIC</a>
+      <a class="text-white m-3" href="index.html#movies-tv">MOVIES & TV</a>
+      <a class="text-white m-3" href="signup.html">SUBSCRIBE</a>
+   </nav>
+
+
+   <!-- Main Content -->
+   <main class="container mt-5">
+
+      <!-- Subscription Form Heading -->
+      <div class="text-center">
+         <h2 class="fw-bold">Become a Subscriber</h2>
+
+         <!-- Description of subscription -->
+         <p>Get the latest stories in music, entertainment, celebrity news, and everything pop culture.</p>
+      </div>
+
+      <!-- Form for Subscriber Sign-Up -->
+      <div class="row">
+         <div class="col-md-6 mx-auto">
+            <form id="subscriberForm">
+               <!-- Full Name -->
+               <div class="mb-3">
+                  <label for="fullName">Full Name</label>
+                  <input type="text"
+                        class="form-control"
+                        id="fullName"
+                        name="fullName" required>
+               </div>
+
+               <!-- Age -->
+               <div class="mb-3">
+                  <label for="age">Age</label>
+                  <input type="number"
+                        class="form-control"
+                        id="age"
+                        name="age" required>
+               </div>
+
+               <!-- Email Address -->
+               <div class="mb-3">
+                  <label for="email">Email Address</label>
+                  <input type="email"
+                        class="form-control"
+                        id="email"
+                        name="email" required>
+               </div>
+
+               <!-- Address -->
+               <div class="mb-3">
+                  <label for="address">Address</label>
+                  <input type="text"
+                        class="form-control"
+                        id="address"
+                        name="address" required>
+               </div>
+
+               <!-- Optional Phone Number -->
+               <div class="mb-3">
+                  <label for="phone">Phone Number (Optional)</label>
+                  <input type="tel"
+                        class="form-control"
+                        id="phone" name="phone">
+               </div>
+
+               <!-- Submit Button -->
+               <button type="submit" class="btn btn-dark w-100">SUBSCRIBE</button>
+            </form>
+         </div>
+      </div>
+   </main>
+
+   <script src="script.js"></script>
+
+   <!-- Display Subscribers -->
+   <div class="mt-5 container">
+      <h2 class="text-center">Our Subscribers</h2>
+
+      <!-- Message area -->
+      <div id="message" class="mt-3"></div>
+
+      <!-- Subscriber table -->
+      <div class="table-responsive">
+         <table class="table table-bordered mt-3">
+            <thead class="table-dark">
+               <tr>
+                  <th>Full Name</th>
+                  <th>Age</th>
+                  <th>Email</th>
+                  <th>Address</th>
+                  <th>Phone</th>
+                  <th>Actions</th>
+               </tr>
+            </thead>
+
+            <tbody id="subscriberList"></tbody>
+         </table>
+      </div>
+   </div>
+
+
+   <!-- Load JavaScript after the HTML elements -->
+   <script src="script.js"></script>
+</body>
+
+</html>
